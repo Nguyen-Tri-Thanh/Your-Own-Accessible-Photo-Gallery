@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Photo Gallery with Lightbox</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body onload="initGallery()">
+
+  <div class="gallery" id="gallery"></div>
+
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-image" src="" alt="">
+    <div id="lightbox-description" class="description"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
